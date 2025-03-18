@@ -310,7 +310,6 @@ class HashGeneratorWindow(Adw.ApplicationWindow):
                    f"Harmless: {stats.get('harmless', 0)}\n"
                    f"Undetected: {stats.get('undetected', 0)}")
             dialog = Adw.MessageDialog(
-                css_classes=["destructive-action"],
                 transient_for=self,
                 heading=f"Results for {hash_value}",
                 body=msg
